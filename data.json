@@ -1,0 +1,108 @@
+[
+    {
+        "id": "1",
+        "name": "Felipe",
+        "avatar": "./levels/Lvl1.jpg",
+        "stats": {
+            "points": 0,
+            "level": 1,
+            "levelsPassed": 1
+        },
+        "taskBlocks": [
+            {
+                "block": "Noviembre / diciembre 2020",
+                "show": true,
+                "values": ["Entregado", "Objetivo", "Ejecución", "Avanzado"],
+                "maxGrades": [4, 3, 2, 1],
+                "tasks": [
+                    {
+                        "title": "1ª tarea",
+                        "taskGrades": [0, 3, 2, 0],
+                        "done": true,
+                        "hand": false
+                    },
+                    {
+                        "title": "2ª tarea",
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "hand": false
+                    },
+                    {
+                        "title": "3ª tarea",
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "hand": false
+                    },
+                    {
+                        "title": "4ª tarea",
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "hand": false
+                    }
+                ]
+            }
+        ],
+        "status": "noHandTask",
+        "aim": 25,
+        "messages": {
+            "goalMet": "Has alcanzado el objetivo! Sigue así, ha superarse el próximo mes!",
+            "failGoal": "No has alcanzado el objetivo. Bajas al último anillo de color blanco.",
+            "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
+            "handTask": "Has conseguido un nuevo anillo al entregar la tarea. Bien hecho!",
+            "noHandTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás."  
+        }
+    }, 
+    {
+        "id": "1",
+        "name": "Ángela",
+        "avatar": "./levels/Lvl1.jpg",
+        "stats": {
+            "points": 0,
+            "level": 1,
+            "levelsPassed": 1
+        },
+        "taskBlocks": [
+            {
+                "block": "Noviembre / diciembre 2020",
+                "show": true,
+                "values": ["Entregado", "Objetivo", "Ejecución", "Avanzado"],
+                "maxGrades": [4, 3, 2, 1],
+                "tasks": [
+                    {
+                        "title": "1ª tarea",
+                        "taskGrades": [0, 3, 2, 0],
+                        "done": true,
+                        "hand": false
+                    },
+                    {
+                        "title": "2ª tarea",
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "hand": false
+                    },
+                    {
+                        "title": "3ª tarea",
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "hand": false
+                    },
+                    {
+                        "title": "4ª tarea",
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "hand": false
+                    }
+                ]
+            }
+        ],
+        "status": "noHandTask",
+        "aim": 25,
+        "messages": {
+            "goalMet": "Has alcanzado el objetivo! Sigue así, ha superarse el próximo mes!",
+            "failGoal": "No has alcanzado el objetivo. Bajas al último anillo de color blanco.",
+            "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
+            "handTask": "Has conseguido un nuevo anillo al entregar la tarea. Bien hecho!",
+            "noHandTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás."           
+        }
+    }
+]

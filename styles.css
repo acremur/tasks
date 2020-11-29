@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1f1f1f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #1f1f1f, #1F2123);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #1f1f1f, #1F2123); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    user-select: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #44a8fa;
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    margin-left: 1.5rem;
+    color: #101010;
+    text-transform: uppercase;
+}
+
+.container {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    height: 100vh;
+}
+
+.pupil-container {
+    display: grid;
+    grid-template-columns: 250px 2fr;
+    grid-template-rows: 1fr;
+    background-color: #101010;
+    color: aliceblue;
+    height: fit-content;
+    max-height: 282px;
+    border-radius: 10px;
+    margin: 15px 0;
+    width: 100%; 
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #1A74E2, #44a8fa);
+    color: #101010;
+    grid-column: 1/-1;
+    padding: 0.5rem; 
+    font-size: 1.2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    grid-row: 1/-1; 
+    width: 100%;
+    height: 100%;
+} 
+
+.avatar h1 {
+    color: #44a8fa;
+}
+
+.avatar h3 {
+    color: rgb(207, 155, 24);
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container img {
+    border-radius: 50%;
+    margin: 0.5rem 1rem;
+    width: 150px;
+    box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+}
+
+.img-container i {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(207, 155, 24);
+}
+
+.img-container i:hover {
+    color: rgb(221, 168, 33);
+}
+
+.tasks-container {
+    overflow: auto;
+    height: 248px;
+}
+
+.tasks-container::-webkit-scrollbar {
+    display: none;
+}
+
+.month-container {
+    background: aliceblue; 
+    background: -webkit-linear-gradient(to bottom, #1F2123, #101010); 
+    background: linear-gradient(to bottom, #1F2123, #101010); 
+    border-radius: 5px;
+    height: fit-content;
+    color: aliceblue;
+    border-radius: 5px;   
+}
+
+.month-info {
+    background: aliceblue; 
+    background: -webkit-linear-gradient(to bottom, #1A74E2, #3FA0EF);  
+    background: linear-gradient(to bottom, #1A74E2, #3FA0EF);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #25282b;
+    padding: 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-transform: uppercase;
+    height: 6.95vh;
+}
+
+.month-info * {
+    padding: 0 1rem;
+}
+
+.month-info .total-points {
+    color: #101010;
+    font-weight: bolder;
+}
+
+.month-info:hover {
+    background: linear-gradient(to bottom, #1d7df1, #44a8fa);
+    cursor: pointer;
+}
+
+.month-info i {
+    font-size: 1.5rem;
+}
+
+.table-head,
+.table-title {
+    color: #3FA0EF;
+}
+
+.table-target,
+.month-info i {
+    color: aliceblue;
+}
+
+.table-total {
+    font-weight: bolder;
+    color: #3FA0EF;
+    font-size: 1.5rem;
+}
+
+.task-table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+}
+
+.hide {
+    display: none;
+}
+
+.task-table * {
+    border: 1px solid black;
+    padding: 0.3rem 0.6rem;
+    text-align: center;
+    min-width: 100px;
+}
+
+.task-table span {
+    border: none;
+    padding: 0;
+    font-weight: bolder;
+    color: #3FA0EF;
+}
+
+
+@media (max-width: 280px) {
+    .container {
+        margin-top: 4rem;
+        height: initial;
+    }
+
+    .message {
+        font-size: 0.75rem;
+    }
+
+    .pupil-container {
+        margin-top: 0.3rem;
+        margin: 4vh 0;
+    }
+
+    .tasks-container {
+        height: fit-content;
+    }
+
+    .month-info {
+        font-size: 0.6rem;
+        text-transform: initial;
+    }
+
+    .month-info i {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1rem;
+    }
+    
+    .container {
+        width: 100%;
+        height: initial;
+        margin-top: 8vh;
+    }
+
+    .pupil-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #101010;
+        color: aliceblue;
+        max-height: 332px;
+        margin: 1vh 0;
+    }
+
+    .avatar {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0 1rem;
+    }
+
+    .avatar h1 {
+        font-size: 1.2rem;
+    }
+
+    .avatar h3 {
+        color: rgb(207, 155, 24);
+    }
+
+    .message {
+        font-size: 1rem;
+    }
+
+    .month-container {
+        overflow: auto;
+        min-width: 100%;
+    }
+
+    .month-info {
+        font-size: 0.75rem;
+    }
+
+    .pupil-container {
+        padding: 0.3rem;
+    }
+
+    .avatar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .img-container img {
+        width: 35%;
+        margin: 0.3rem 0.2rem;
+    }
+
+    .img-container i {
+        font-size: 1rem;
+    }
+    
+    .tasks-container {
+        grid-column: 1/-1;
+        height: fit-content;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 10rem 1rem;
+        height: initial;
+    }
+    
+    .tasks-container {
+        min-height: 0;
+    }
+}
+
+@media (min-height: 1024px) {
+    .container {
+        margin: 10rem 1rem;
+    }
+
+    .pupil-container {
+        margin: 1rem 2rem;
+    }
+
+    .month-info {
+        height: 5vh;
+    }
+}
