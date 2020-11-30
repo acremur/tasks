@@ -58,7 +58,7 @@ function displayPupil(data) {
                                 ${task.taskGrades.map((grade, index) => (
                                     `<td>${task.done ? `${grade} / ${taskBlock.maxGrades[index]}</td>` : ''}`
                                 )).join('')}
-                                <td>${task.done ? `${task.taskGrades.reduce((total, grade) => total += grade, 0)}` : ''}</td>
+                                <td>${task.done ? `${task.taskGrades.reduce((total, grade) => total += grade, 0)} / 10` : ''}</td>
                             </tr>
                         `
                     )).join('')}
