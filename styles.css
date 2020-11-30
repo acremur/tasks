@@ -66,8 +66,8 @@ body {
     grid-column: 1/-1;
     padding: 0.5rem; 
     font-size: 1.2rem;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .avatar {
@@ -113,7 +113,6 @@ body {
 }
 
 .tasks-container {
-    overflow: auto;
     height: 248px;
 }
 
@@ -125,10 +124,8 @@ body {
     background: aliceblue; 
     background: -webkit-linear-gradient(to bottom, #1F2123, #101010); 
     background: linear-gradient(to bottom, #1F2123, #101010); 
-    border-radius: 5px;
     height: fit-content;
     color: aliceblue;
-    border-radius: 5px;   
 }
 
 .month-info {
