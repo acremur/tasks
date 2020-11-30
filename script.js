@@ -137,7 +137,7 @@ function calculateLevel(data, levelDOM) {
             }
         })
     })
-    data.stats.level += Math.floor(data.stats.points / 10)
+    data.stats.level += Math.floor(data.stats.points / 20)
     data.stats.levelsPassed = data.stats.level
     levelDOM.innerText = `Level ${data.stats.levelsPassed}`
 }
