@@ -114,7 +114,7 @@ function displayPupil(data) {
         if (data.stats.level >= data.stats.levelsPassed) {
             rightArrow.style.visibility = 'hidden'
         }  else rightArrow.style.visibility = 'visible'
-        levelDOM.innerText = `Level ${data.stats.levelsPassed}`
+        levelDOM.innerText = `Nivel ${data.stats.levelsPassed}`
     }
 
     handleTable(tasks)
@@ -150,5 +150,5 @@ function calculateLevel(data, levelDOM) {
     })
     data.stats.level += Math.floor(data.stats.points / 20)
     data.stats.levelsPassed = data.stats.level
-    levelDOM.innerText = `Level ${data.stats.levelsPassed}`
+    levelDOM.innerText = `Nivel ${data.stats.levelsPassed}`
 }
