@@ -166,6 +166,11 @@ body {
     color: #3FA0EF;
 }
 
+.table-head span {
+    color: aliceblue;
+    font-size: 0.9rem;
+}
+
 .table-target,
 .month-info i {
     color: aliceblue;
@@ -181,18 +186,29 @@ body {
     border-spacing: 0;
     border-collapse: collapse;
     width: 100%;
-    box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
 }
 
 .hide {
-    display: none;
+    animation: hideTable 0.6s forwards ease-in;
 }
 
 .task-table * {
     border: 1px solid black;
-    padding: 0.3rem 0.6rem;
+    padding: 0.2rem 0.5rem;
     text-align: center;
     min-width: 100px;
+}
+
+.task-table .handed {
+    color: greenyellow;
+}
+
+.task-table .nohanded {
+    color: coral;
+}
+
+.task-table .small {
+    font-size: 0.7rem;
 }
 
 .task-table span {
@@ -202,6 +218,27 @@ body {
     color: #3FA0EF;
 }
 
+@keyframes hideTable {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes moveStars {
+    from {
+        transform: translate(300%);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 @media (max-width: 280px) {
     .container {
@@ -265,6 +302,7 @@ body {
 
     .avatar h3 {
         color: rgb(207, 155, 24);
+        min-width: 60px;
     }
 
     .message {

@@ -19,41 +19,44 @@
                         "title": "1ª tarea",
                         "taskGrades": [0, 3, 2, 0],
                         "done": true,
-                        "hand": false
+                        "handed": false
                     },
                     {
                         "title": "2ª tarea",
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
-                        "hand": false
+                        "handed": false
                     },
                     {
                         "title": "3ª tarea",
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
-                        "hand": false
+                        "handed": false
                     },
                     {
                         "title": "4ª tarea",
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
-                        "hand": false
+                        "handed": false
                     }
                 ]
             }
         ],
-        "status": "noHandTask",
+        "status": {
+            "message": "noHandedTask",
+            "kind": true
+        },
         "aim": 25,
         "messages": {
             "goalMet": "Has alcanzado el objetivo! Sigue así, ha superarse el próximo mes!",
             "failGoal": "No has alcanzado el objetivo. Bajas al último anillo de color blanco.",
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
-            "handTask": "Has conseguido un nuevo anillo al entregar la tarea. Bien hecho!",
-            "noHandTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás."  
+            "handedTask": "Has conseguido un nuevo anillo al entregar la tarea. Bien hecho!",
+            "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás."  
         }
-    }, 
+    },
     {
-        "id": "1",
+        "id": "2",
         "name": "Ángela",
         "avatar": "./levels/Lvl1.jpg",
         "stats": {
@@ -72,37 +75,40 @@
                         "title": "1ª tarea",
                         "taskGrades": [0, 3, 2, 0],
                         "done": true,
-                        "hand": false
+                        "handed": false
                     },
                     {
                         "title": "2ª tarea",
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
-                        "hand": false
+                        "handed": false
                     },
                     {
                         "title": "3ª tarea",
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
-                        "hand": false
+                        "handed": false
                     },
                     {
                         "title": "4ª tarea",
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
-                        "hand": false
+                        "handed": false
                     }
                 ]
             }
         ],
-        "status": "noHandTask",
+        "status": {
+            "message": "noHandedTask",
+            "kind": true
+        },
         "aim": 25,
         "messages": {
             "goalMet": "Has alcanzado el objetivo! Sigue así, ha superarse el próximo mes!",
             "failGoal": "No has alcanzado el objetivo. Bajas al último anillo de color blanco.",
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
-            "handTask": "Has conseguido un nuevo anillo al entregar la tarea. Bien hecho!",
-            "noHandTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás."           
+            "handedTask": "Has conseguido un nuevo anillo al entregar la tarea. Bien hecho!",
+            "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás."  
         }
     }
 ]

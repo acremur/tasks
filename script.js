@@ -44,19 +44,22 @@ function displayPupil(data) {
                 <thead class="table-head">
                     <tr>
                         <th class="table-main"></th>
-                        ${taskBlock.values.map(value => (
-                            `<td>${value}</td>`
+                        ${taskBlock.values.map((value, index) => (
+                            `<td>${value}<br>${taskBlock.maxGrades[index]}⭐</td>`
                         )).join('')}
                         <td>Total</td>
                     </tr>
                 </thead>
                 <tbody>
-                    ${taskBlock.tasks.map(task => (
+                    ${taskBlock.tasks.map((task, index) => (
                         `
                             <tr>
-                                <th class="table-title">${task.title}</th>
+                                <th class="table-title">${index + 1}ª tarea</th>
                                 ${task.taskGrades.map((grade, index) => (
-                                    `<td>${task.done ? `${grade} / ${taskBlock.maxGrades[index]}</td>` : ''}`
+                                    `<td class="${index === 0 && task.handed ? 'handed' : 'nohanded'} ${index !== 0 ? 'small' : ''}">
+                                        ${(taskBlock.values[index] !== 'Entregado' && task.done 
+                                        ? `${Array(task.taskGrades[index]).fill().map((_, i) => `⭐`).join('')}</td>` 
+                                        : (task.handed ? 'Sí' : (task.done && !task.handed) ? 'No' : ''))}`
                                 )).join('')}
                                 <td>${task.done ? `${task.taskGrades.reduce((total, grade) => total += grade, 0)} / 10` : ''}</td>
                             </tr>
@@ -79,7 +82,8 @@ function displayPupil(data) {
 
     const message = document.createElement('h1')
     message.classList.add('message')
-    message.innerText = data.messages[data.status]
+    message.classList.add(`${data.status.kind ? 'kind' : 'unkind'}`)
+    message.innerText = data.messages[data.status.message]
 
     pupil.appendChild(message)
 
@@ -125,6 +129,13 @@ function handleTable(tasks) {
 
     monthTasks.forEach((monthTask, index) => monthTask.addEventListener('click', e => {
         monthTask.nextElementSibling.classList.toggle('hide')
+        if (monthTask.nextElementSibling.classList.contains('hide')) {
+            monthTask.nextElementSibling.addEventListener('animationend', e => {
+                monthTask.nextElementSibling.style.display = 'none' 
+            })
+        } else {
+            monthTask.nextElementSibling.style.display = 'table' 
+        }
         monthTask.parentElement.parentElement.scrollTop = index * monthTask.scrollHeight
     }))
 }
@@ -132,7 +143,7 @@ function handleTable(tasks) {
 function calculateLevel(data, levelDOM) {
     data.taskBlocks.forEach(taskBlock => {
         taskBlock.tasks.map(task => {
-            if (task.hand) {
+            if (task.handed) {
                 data.stats.level++
             }
         })
