@@ -19,7 +19,7 @@ function displayPupil(data) {
                 <img class="img" src="${data.avatar}" alt="img">
                 <span><i class="fas fa-chevron-right" ></i></span> 
             </div>
-            <h3 class="level">Level ${data.stats.level}</h3>
+            <h3 class="level">Nivel ${data.stats.level}</h3>
         </div>
     `
 
