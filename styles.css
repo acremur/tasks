@@ -15,6 +15,53 @@ body {
     user-select: none;
 }
 
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: aliceblue;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow: auto;
+    z-index: 100;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #1A74E2;
+    color: aliceblue;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 1rem;
+    border: 1px solid #101010;
+    width: fit-content; /* Could be more or less, depending on screen size */
+    border-radius: 5px;
+}
+
+.modal-content h1 {
+    color: #25282b;
+}
+
+.modal-content ul {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.modal-content i {
+    color: aliceblue;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content i:hover {
+    color: #c1e0fa;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -162,8 +209,14 @@ body {
 }
 
 .table-head,
-.table-title {
+.table-task,
+.table-target {
     color: #3FA0EF;
+}
+
+.table-task:hover {
+    color: #c1e0fa;
+    cursor: pointer;
 }
 
 .table-head span {

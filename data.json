@@ -16,25 +16,29 @@
                 "maxGrades": [4, 3, 2, 1],
                 "tasks": [
                     {
-                        "title": "1ª tarea",
+                        "title": "My Brass Band con la mano derecha",
+                        "notes": ["La tarea no se ha entregado"],
                         "taskGrades": [0, 3, 2, 0],
                         "done": true,
                         "handed": false
                     },
                     {
-                        "title": "2ª tarea",
+                        "title": "My Brass Band con las dos manos",
+                        "notes": ["No se ha entregado"],
+                        "taskGrades": [0, 3, 2, 0],
+                        "done": true,
+                        "handed": false
+                    },
+                    {
+                        "title": "",
+                        "notes": ["No se ha relizado todavía."],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
                     },
                     {
-                        "title": "3ª tarea",
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
-                        "handed": false
-                    },
-                    {
-                        "title": "4ª tarea",
+                        "title": "",
+                        "notes": ["No se ha relizado todavía."],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
@@ -51,7 +55,7 @@
             "goalMet": "Has alcanzado el objetivo! Sigue así, ha superarse el próximo mes!",
             "failGoal": "No has alcanzado el objetivo. Bajas al último anillo de color blanco.",
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
-            "handedTask": "Has conseguido un nuevo anillo al entregar la tarea. Bien hecho!",
+            "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
             "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás."  
         }
     },
@@ -72,25 +76,33 @@
                 "maxGrades": [4, 3, 2, 1],
                 "tasks": [
                     {
-                        "title": "1ª tarea",
+                        "title": "Innocense a cualquier velocidad",
+                        "notes": ["No se ha entregado"],
                         "taskGrades": [0, 3, 2, 0],
                         "done": true,
                         "handed": false
                     },
                     {
-                        "title": "2ª tarea",
+                        "title": "Innocense a 60 bpm",
+                        "notes": [
+                            "Objetivo: hay que mejorar la fluidez. Cuidado con el tiempo, te adelantas un poco.",
+                            "Ejecución: Se tiene que notar más la dinámica, los crecendos y las bajadas.",
+                            "Avanzado: sería deseable aumentar la velocidad de 80 bpm a 112 bpm, que es la velocidad original de la pieza."
+                        ],
+                        "taskGrades": [4, 2, 1, 0],
+                        "done": true,
+                        "handed": true
+                    },
+                    {
+                        "title": "",
+                        "notes": ["No se ha relizado todavía."],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
                     },
                     {
-                        "title": "3ª tarea",
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
-                        "handed": false
-                    },
-                    {
-                        "title": "4ª tarea",
+                        "title": "",
+                        "notes": ["No se ha relizado todavía."],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
@@ -99,7 +111,7 @@
             }
         ],
         "status": {
-            "message": "noHandedTask",
+            "message": "handedTask",
             "kind": true
         },
         "aim": 25,
@@ -107,7 +119,7 @@
             "goalMet": "Has alcanzado el objetivo! Sigue así, ha superarse el próximo mes!",
             "failGoal": "No has alcanzado el objetivo. Bajas al último anillo de color blanco.",
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
-            "handedTask": "Has conseguido un nuevo anillo al entregar la tarea. Bien hecho!",
+            "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
             "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás."  
         }
     }

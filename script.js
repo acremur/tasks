@@ -1,4 +1,6 @@
 const container = document.getElementById('container')
+const modal = document.getElementById('modal')
+const close = document.getElementById('close')
 
 document.addEventListener('DOMContentLoaded', e => {
     fetch('./data.json')
@@ -6,6 +8,10 @@ document.addEventListener('DOMContentLoaded', e => {
         .then(json =>  json.forEach(data => {
             displayPupil(data)
         }))
+})
+
+close.addEventListener('click', e => {
+    modal.style.display = 'none'
 })
 
 function displayPupil(data) {
@@ -54,7 +60,7 @@ function displayPupil(data) {
                     ${taskBlock.tasks.map((task, index) => (
                         `
                             <tr>
-                                <th class="table-title">${index + 1}ª tarea</th>
+                                <th class="table-task">${index + 1}ª tarea</th>
                                 ${task.taskGrades.map((grade, index) => (
                                     `<td class="${index === 0 && task.handed ? 'handed' : 'nohanded'} ${index !== 0 ? 'small' : ''}">
                                         ${(taskBlock.values[index] !== 'Entregado' && task.done 
@@ -68,7 +74,7 @@ function displayPupil(data) {
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th class="table-title">Objetivo</th>
+                        <th class="table-target">Objetivo</th>
                         <td colspan="4" class="table-target">Alcanzar al menos <span>${data.aim} puntos</span> en el mes</td>
                         <td class="table-total">${sumTasksGrades} / 40</td>
                     </tr>
@@ -79,19 +85,13 @@ function displayPupil(data) {
     })
 
     pupil.appendChild(tasks)
-
-    const message = document.createElement('h1')
-    message.classList.add('message')
-    message.classList.add(`${data.status.kind ? 'kind' : 'unkind'}`)
-    message.innerText = data.messages[data.status.message]
-
-    pupil.appendChild(message)
-
+ 
     const img = pupil.querySelector('.img')
     const leftArrow = pupil.querySelector('.fa-chevron-left')
     const rightArrow = pupil.querySelector('.fa-chevron-right')
     const levelDOM = pupil.querySelector('.level')
-
+    const taskTitles = pupil.querySelectorAll('.table-task')
+    
     leftArrow.addEventListener('click', e => {
         if (data.stats.level > 1) {
             data.stats.level -= 1
@@ -117,6 +117,8 @@ function displayPupil(data) {
         levelDOM.innerText = `Nivel ${data.stats.levelsPassed}`
     }
 
+    setMessage(pupil, data)
+    setModal(taskTitles, data)
     handleTable(tasks)
     calculateLevel(data, levelDOM)
     displayLevel()
@@ -151,4 +153,55 @@ function calculateLevel(data, levelDOM) {
     data.stats.level += Math.floor(data.stats.points / 20)
     data.stats.levelsPassed = data.stats.level
     levelDOM.innerText = `Nivel ${data.stats.levelsPassed}`
+}
+
+function setMessage(pupil, data) {
+    const message = document.createElement('h1')
+    message.classList.add('message')
+    message.classList.add(`${data.status.kind ? 'kind' : 'unkind'}`)
+    message.innerText = data.messages[data.status.message]
+
+    pupil.appendChild(message)
+}
+
+function getTaskTitles(data) {
+    const taskTitles = []
+    data.taskBlocks.forEach(taskBlock => {
+        taskBlock.tasks.forEach(task => {
+            taskTitles.push(task.title)
+        })
+    })
+    return taskTitles
+}
+
+function getTaskNotes(data, index) {
+    let taskNotes = []
+    data.taskBlocks.forEach(taskBlock => {
+        taskBlock.tasks.forEach((task, i) => {
+            task.notes.forEach(note => {
+                if (index === i) {
+                    taskNotes.push(note)
+                }
+            })
+        })
+    })
+    return taskNotes
+}
+
+function setModal(taskTitles, data) {
+    taskTitles.forEach((taskTitle, index) => {
+        const modalTitles = getTaskTitles(data)
+        const modalNotes = getTaskNotes(data, index)
+        taskTitle.addEventListener('click', e => {
+            modal.style.display = 'block'
+            const title = modal.children[0].children[1]
+            const notes = modal.children[0].children[2]
+            title.textContent = `Tarea ${index + 1}: ${modalTitles[index]}`
+            notes.innerHTML = `
+                ${modalNotes.map(note => (
+                    `<li>${note}</li>`
+                )).join('')}
+            `
+        })
+    })
 }
