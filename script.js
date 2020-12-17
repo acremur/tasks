@@ -67,7 +67,7 @@ function displayPupil(data) {
                                         ? `${Array(task.taskGrades[index]).fill().map((_, i) => `⭐`).join('')}</td>` 
                                         : (task.handed ? 'Sí' : (task.done && !task.handed) ? 'No' : ''))}`
                                 )).join('')}
-                                <td>${task.done ? `${task.taskGrades.reduce((total, grade) => total += grade, 0)} / 10` : ''}</td>
+                                <td class=${task.taskGrades.reduce((total, grade) => total += grade, 0) === 10 ? 'handed' : ''}>${task.done ? `${task.taskGrades.reduce((total, grade) => total += grade, 0)} / 10` : ''}</td>
                             </tr>
                         `
                     )).join('')}
@@ -150,8 +150,9 @@ function calculateLevel(data, levelDOM) {
             }
         })
     })
-    data.stats.level += Math.floor(data.stats.points / 20)
+    // data.stats.level += Math.floor(data.stats.points / 20)
     data.stats.levelsPassed = data.stats.level
+    data.stats.levelsPassed += data.bonus
     levelDOM.innerText = `Nivel ${data.stats.levelsPassed}`
 }
 

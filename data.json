@@ -31,28 +31,30 @@
                     },
                     {
                         "title": "",
-                        "notes": ["No se ha relizado todavía."],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
+                        "notes": ["Jelly Wobble"],
+                        "taskGrades": [0, 2, 1, 0],
+                        "done": true,
                         "handed": false
                     },
                     {
                         "title": "",
-                        "notes": ["No se ha relizado todavía."],
+                        "notes": ["Jingle Bells de oído"],
                         "taskGrades": [0, 0, 0, 0],
-                        "done": false,
+                        "done": true,
                         "handed": false
                     }
                 ]
             }
         ],
+        "bonus": 0,
         "status": {
-            "message": "noHandedTask",
+            "message": "failGoal",
             "kind": true
         },
         "aim": 25,
         "messages": {
             "goalMet": "Has alcanzado el objetivo! Sigue así, ha superarse el próximo mes!",
+            "goalMetBonus": "Has alcanzado el objetivo! Además, mejoras tu avatar al conseguir la máxima puntuación.",
             "failGoal": "No has alcanzado el objetivo. Bajas al último anillo de color blanco.",
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
             "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
@@ -95,28 +97,30 @@
                     },
                     {
                         "title": "",
-                        "notes": ["No se ha relizado todavía."],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
-                        "handed": false
+                        "notes": ["Muy bien para el tiempo que se le ha dedicado a la pieza, lógicamente falta fluidez, hay que seguir practicando para tenerlo interiorizado. Lo de siempre, prestar atención a la dinámica y articulaciones. Hay que ir metiéndole pedal a las piezas porque si no suena un poco machacón, pero en general, buen trabajo."],
+                        "taskGrades": [4, 3, 1, 0],
+                        "done": true,
+                        "handed": true
                     },
                     {
                         "title": "",
-                        "notes": ["No se ha relizado todavía."],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
-                        "handed": false
+                        "notes": ["Está genial!, la parte del estribillo es verdad que te había ayudado un poco, pero la estrofa la has sacado tal cual, igual que la grabación. Me alegro que hayas hecho ese esfuerzo y te animo a que saques más canciones que te gusten y les busques los acordes. Bien hecho."],
+                        "taskGrades": [4, 3, 2, 1],
+                        "done": true,
+                        "handed": true
                     }
                 ]
             }
         ],
+        "bonus": 1,
         "status": {
-            "message": "handedTask",
+            "message": "goalMetBonus",
             "kind": true
         },
         "aim": 25,
         "messages": {
             "goalMet": "Has alcanzado el objetivo! Sigue así, ha superarse el próximo mes!",
+            "goalMetBonus": "Has alcanzado el objetivo! Además, mejoras tu avatar al conseguir la máxima puntuación.",
             "failGoal": "No has alcanzado el objetivo. Bajas al último anillo de color blanco.",
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
             "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
