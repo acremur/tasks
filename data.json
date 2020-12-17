@@ -17,28 +17,28 @@
                 "tasks": [
                     {
                         "title": "My Brass Band con la mano derecha",
-                        "notes": ["La tarea no se ha entregado"],
+                        "notes": ["La tarea no ha sido entregado"],
                         "taskGrades": [0, 3, 2, 0],
                         "done": true,
                         "handed": false
                     },
                     {
                         "title": "My Brass Band con las dos manos",
-                        "notes": ["No se ha entregado"],
+                        "notes": ["La tarea no ha sido entregado"],
                         "taskGrades": [0, 3, 2, 0],
                         "done": true,
                         "handed": false
                     },
                     {
-                        "title": "",
-                        "notes": ["Jelly Wobble"],
+                        "title": "Jelly Wobble",
+                        "notes": ["La tarea no ha sido entregado"],
                         "taskGrades": [0, 2, 1, 0],
                         "done": true,
                         "handed": false
                     },
                     {
-                        "title": "",
-                        "notes": ["Jingle Bells de oído"],
+                        "title": "Jingle Bells de oído",
+                        "notes": ["La tarea no ha sido entregado"],
                         "taskGrades": [0, 0, 0, 0],
                         "done": true,
                         "handed": false
@@ -97,14 +97,17 @@
                     },
                     {
                         "title": "",
-                        "notes": ["Muy bien para el tiempo que se le ha dedicado a la pieza, lógicamente falta fluidez, hay que seguir practicando para tenerlo interiorizado. Lo de siempre, prestar atención a la dinámica y articulaciones. Hay que ir metiéndole pedal a las piezas porque si no suena un poco machacón, pero en general, buen trabajo."],
+                        "notes": [
+                            "Ejecución: prestar atención a la dinámica y articulaciones. Usar pedal.",
+                            "Avanzado: falta fluidez, hay que seguir practicando para tenerlo interiorizado."
+                        ],
                         "taskGrades": [4, 3, 1, 0],
                         "done": true,
                         "handed": true
                     },
                     {
                         "title": "",
-                        "notes": ["Está genial!, la parte del estribillo es verdad que te había ayudado un poco, pero la estrofa la has sacado tal cual, igual que la grabación. Me alegro que hayas hecho ese esfuerzo y te animo a que saques más canciones que te gusten y les busques los acordes. Bien hecho."],
+                        "notes": ["Está genial!, Te animo a que saques más canciones que te gusten y les busques los acordes. Bien hecho."],
                         "taskGrades": [4, 3, 2, 1],
                         "done": true,
                         "handed": true
