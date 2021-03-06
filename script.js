@@ -46,7 +46,7 @@ function displayPupil(data) {
                 <h3 class="total-points">${data.stats.points += sumTasksGrades} puntos</h3>
             </div>
            
-            <table class="task-table ${taskBlock.show ? '' : 'hide'}" id="table">
+            <table class="task-table hide" id="table">
                 <thead class="table-head">
                     <tr>
                         <th class="table-main"></th>
@@ -111,7 +111,7 @@ function displayPupil(data) {
         if (data.stats.level <= 1) {
             leftArrow.style.visibility = 'hidden'
         }  else leftArrow.style.visibility = 'visible'
-        if (data.stats.level >= data.stats.levelsPassed) {
+        if (data.stats.level >= data.stats.levelsPassed - data.bonus) {
             rightArrow.style.visibility = 'hidden'
         }  else rightArrow.style.visibility = 'visible'
         levelDOM.innerText = `Nivel ${data.stats.levelsPassed}`
@@ -175,15 +175,11 @@ function getTaskTitles(data) {
     return taskTitles
 }
 
-function getTaskNotes(data, index) {
+function getTaskNotes(data) {
     let taskNotes = []
     data.taskBlocks.forEach(taskBlock => {
-        taskBlock.tasks.forEach((task, i) => {
-            task.notes.forEach(note => {
-                if (index === i) {
-                    taskNotes.push(note)
-                }
-            })
+        taskBlock.tasks.forEach(task => {
+            taskNotes.push(task.notes)
         })
     })
     return taskNotes
@@ -197,12 +193,11 @@ function setModal(taskTitles, data) {
             modal.style.display = 'block'
             const title = modal.children[0].children[1]
             const notes = modal.children[0].children[2]
+            notes.innerHTML = ''
             title.textContent = `Tarea ${index + 1}: ${modalTitles[index]}`
-            notes.innerHTML = `
-                ${modalNotes.map(note => (
-                    `<li>${note}</li>`
-                )).join('')}
-            `
+            for (let i = 0; i < modalNotes[index].length; i++) {
+                notes.innerHTML += `<li>${modalNotes[index][i]}</li>`
+            }
         })
     })
 }

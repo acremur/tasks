@@ -161,6 +161,7 @@ body {
 
 .tasks-container {
     height: 248px;
+    overflow: scroll;
 }
 
 .tasks-container::-webkit-scrollbar {
@@ -239,6 +240,7 @@ body {
     border-spacing: 0;
     border-collapse: collapse;
     width: 100%;
+    display: none;
 }
 
 .hide {

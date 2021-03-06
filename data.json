@@ -17,30 +17,66 @@
                 "tasks": [
                     {
                         "title": "My Brass Band con la mano derecha",
-                        "notes": ["La tarea no ha sido entregado"],
+                        "notes": ["No se ha entregado la tarea"],
                         "taskGrades": [0, 3, 2, 0],
                         "done": true,
                         "handed": false
                     },
                     {
                         "title": "My Brass Band con las dos manos",
-                        "notes": ["La tarea no ha sido entregado"],
+                        "notes": ["No se ha entregado la tarea"],
                         "taskGrades": [0, 3, 2, 0],
                         "done": true,
                         "handed": false
                     },
                     {
                         "title": "Jelly Wobble",
-                        "notes": ["La tarea no ha sido entregado"],
+                        "notes": ["No se ha entregado la tarea"],
                         "taskGrades": [0, 2, 1, 0],
                         "done": true,
                         "handed": false
                     },
                     {
                         "title": "Jingle Bells de oído",
-                        "notes": ["La tarea no ha sido entregado"],
+                        "notes": ["No se ha entregado la tarea"],
                         "taskGrades": [0, 0, 0, 0],
                         "done": true,
+                        "handed": false
+                    }
+                ]
+            },
+            {
+                "block": "Febrero / marzo 2020",
+                "show": true,
+                "values": ["Entregado", "Objetivo", "Ejecución", "Avanzado"],
+                "maxGrades": [4, 3, 2, 1],
+                "tasks": [
+                    {
+                        "title": "Melodía de oído",
+                        "notes": ["No se ha entregado la tarea"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": true,
+                        "handed": false
+                    },
+                    {
+                        "title": "Train Ride",
+                        "notes": ["No se ha entregado la tarea"],
+                        "taskGrades": [4, 3, 2, 1],
+                        "done": true,
+                        "handed": true
+                    },
+                    {
+                        "title": "My Brass Band repaso",
+                        "notes": ["No se ha entregado la tarea"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": true,
+                        "handed": false
+                    },
+                    {
+                        "title": "Por determinar",
+                        "notes": ["Esta tarea está programada para el 09/03/21"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
                         "handed": false
                     }
                 ]
@@ -48,7 +84,7 @@
         ],
         "bonus": 0,
         "status": {
-            "message": "failGoal",
+            "message": "noHandedTask",
             "kind": true
         },
         "aim": 25,
@@ -79,7 +115,7 @@
                 "tasks": [
                     {
                         "title": "Innocense a cualquier velocidad",
-                        "notes": ["No se ha entregado"],
+                        "notes": ["No se ha entregado la tarea"],
                         "taskGrades": [0, 3, 2, 0],
                         "done": true,
                         "handed": false
@@ -113,11 +149,51 @@
                         "handed": true
                     }
                 ]
+            },
+            {
+                "block": "Febrero / marzo 2021",
+                "show": true,
+                "values": ["Entregado", "Objetivo", "Ejecución", "Avanzado"],
+                "maxGrades": [4, 3, 2, 1],
+                "tasks": [
+                    {
+                        "title": "Innocense a 80 bpm",
+                        "notes": ["No se ha entregado la tarea"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": true,
+                        "handed": false
+                    },
+                    {
+                        "title": "Salut d'amour manos separadas",
+                        "notes": [
+                            "Avanzado: hay que mejorar la fluidez, pero salvo el final que no lo llegamos a ver, lo demás está bien"
+                        ],
+                        "taskGrades": [4, 3, 2, 0],
+                        "done": true,
+                        "handed": true
+                    },
+                    {
+                        "title": "Salut d'amour ambas manos primera mitad",
+                        "notes": [
+                            "Avanzado: hay que seguir practicando para que suene más fluido. Muy bien corrigiendo el final."
+                        ],
+                        "taskGrades": [4, 3, 2, 0],
+                        "done": true,
+                        "handed": true
+                    },
+                    {
+                        "title": "Por determinar",
+                        "notes": ["Esta tarea está programada para el 09/03/21"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    }
+                ]
             }
         ],
         "bonus": 1,
         "status": {
-            "message": "goalMetBonus",
+            "message": "levelUp",
             "kind": true
         },
         "aim": 25,
