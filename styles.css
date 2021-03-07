@@ -364,7 +364,7 @@ body {
     }
 
     .message {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     .month-container {
@@ -393,6 +393,11 @@ body {
 
     .img-container i {
         font-size: 1rem;
+    }
+
+    .month-info h4,
+    .total-points {
+        font-size: 0.6rem;
     }
     
     .tasks-container {
@@ -438,11 +443,20 @@ body {
         height: 5vh;
     }
 
+    .month-info h4,
+    .total-points {
+        font-size: 1rem;
+    }
+
     .task-table .small {
         font-size: 0.7rem;
     }
 
     .task-table * {
+        font-size: 1rem;
+    }
+
+    .message {
         font-size: 1rem;
     }
 }
@@ -468,7 +482,12 @@ body {
     }
 
     .message {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    .month-info h4,
+    .total-points {
+        font-size: 1.5rem;
     }
     
     .task-table .small {
