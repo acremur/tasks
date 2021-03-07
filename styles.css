@@ -43,7 +43,8 @@ body {
 }
 
 .modal-content h1 {
-    color: #25282b;
+    color: #082e4d;
+    font-size: 1.3rem;
 }
 
 .modal-content ul {
@@ -54,7 +55,7 @@ body {
 .modal-content i {
     color: aliceblue;
     float: right;
-    font-size: 28px;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
 }
