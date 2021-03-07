@@ -252,7 +252,7 @@ body {
     border: 1px solid black;
     padding: 0.2rem 0.5rem;
     text-align: center;
-    min-width: 100px;
+    min-width: 55px;
 }
 
 .task-table .handed {
@@ -296,6 +296,7 @@ body {
     }
 }
 
+/* Galaxy Fold */
 @media (max-width: 280px) {
     .container {
         margin-top: 4rem;
@@ -398,22 +399,35 @@ body {
         grid-column: 1/-1;
         height: fit-content;
     }
-}
 
-@media (min-width: 768px) {
-    .container {
-        margin: 10rem 1rem;
-        height: initial;
+    .task-table .small {
+        font-size: 0.5rem;
     }
-    
-    .tasks-container {
-        min-height: 0;
+
+    .task-table * {
+        font-size: 0.7rem;
+        max-width: 30px;
     }
 }
 
+/* IPad */
 @media (min-height: 1024px) {
     .container {
         margin: 10rem 1rem;
+    }
+
+    .avatar h1, 
+    .avatar .level {
+        font-size: 1.5rem;
+    }
+
+    .img-container img {
+        width: 45%;
+        margin: 0.3rem 0.2rem;
+    }
+
+    .img-container i {
+        font-size: 2rem;
     }
 
     .pupil-container {
@@ -422,5 +436,46 @@ body {
 
     .month-info {
         height: 5vh;
+    }
+
+    .task-table .small {
+        font-size: 0.7rem;
+    }
+
+    .task-table * {
+        font-size: 1rem;
+    }
+}
+
+/* IPad Pro */
+@media (min-height: 1366px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .avatar h1, 
+    .avatar .level {
+        font-size: 2rem;
+    }
+
+    .img-container img {
+        width: 55%;
+        margin: 0.3rem 0.2rem;
+    }
+
+    .month-info {
+        font-size: 1.5rem;
+    }
+
+    .message {
+        font-size: 1.3rem;
+    }
+    
+    .task-table .small {
+        font-size: 1.2rem;
+    }
+
+    .task-table * {
+        font-size: 1.5rem;
     }
 }
