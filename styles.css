@@ -38,6 +38,7 @@ body {
     padding: 1rem;
     border: 1px solid #101010;
     width: fit-content; /* Could be more or less, depending on screen size */
+    max-width: 800px;
     border-radius: 5px;
 }
 
