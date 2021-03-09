@@ -1,5 +1,6 @@
 const container = document.getElementById('container')
-const modal = document.getElementById('modal')
+const modalMessage = document.getElementById('modal-message')
+const modalAvatar = document.getElementById('modal-avatar')
 const close = document.getElementById('close')
 
 document.addEventListener('DOMContentLoaded', e => {
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', e => {
 })
 
 close.addEventListener('click', e => {
-    modal.style.display = 'none'
+    modalMessage.style.display = 'none'
 })
 
 function displayPupil(data) {
@@ -93,22 +94,23 @@ function displayPupil(data) {
     const taskTitles = pupil.querySelectorAll('.table-task')
     
     leftArrow.addEventListener('click', e => {
-        if (data.stats.level > 1) {
+        if (data.stats.levelsPassed + data.bonus > 1) {
             data.stats.level -= 1
             displayLevel()
         } 
     })
     
     rightArrow.addEventListener('click', e => {
-        if (data.stats.level < data.stats.levelsPassed) {
+        if (data.stats.level < data.stats.levelsPassed + data.bonus) {
             data.stats.level += 1
             displayLevel()
         } 
     })
 
     function displayLevel() {
-        img.src = `./Levels/Lvl${data.stats.level}.jpg`
-        if (data.stats.level <= 1) {
+        const level = data.stats.level + data.bonus
+        img.src = `./Levels/Lvl${level}.jpg`
+        if (data.stats.level + data.bonus <= 1) {
             leftArrow.style.visibility = 'hidden'
         }  else leftArrow.style.visibility = 'visible'
         if (data.stats.level >= data.stats.levelsPassed - data.bonus) {
@@ -118,7 +120,7 @@ function displayPupil(data) {
     }
 
     setMessage(pupil, data)
-    setModal(taskTitles, data)
+    setModal(img, taskTitles, data, levelDOM)
     handleTable(tasks)
     calculateLevel(data, levelDOM)
     displayLevel()
@@ -185,19 +187,69 @@ function getTaskNotes(data) {
     return taskNotes
 }
 
-function setModal(taskTitles, data) {
+function setModal(img, taskTitles, data, levelDOM) {
     taskTitles.forEach((taskTitle, index) => {
-        const modalTitles = getTaskTitles(data)
-        const modalNotes = getTaskNotes(data, index)
+        const modalMessageTitles = getTaskTitles(data)
+        const modalMessageNotes = getTaskNotes(data, index)
         taskTitle.addEventListener('click', e => {
-            modal.style.display = 'block'
-            const title = modal.children[0].children[1]
-            const notes = modal.children[0].children[2]
+            modalMessage.style.display = 'block'
+            const title = modalMessage.children[0].children[1]
+            const notes = modalMessage.children[0].children[2]
             notes.innerHTML = ''
-            title.textContent = `Tarea ${index + 1}: ${modalTitles[index]}`
-            for (let i = 0; i < modalNotes[index].length; i++) {
-                notes.innerHTML += `<li>${modalNotes[index][i]}</li>`
+            title.textContent = `Tarea ${index + 1}: ${modalMessageTitles[index]}`
+            for (let i = 0; i < modalMessageNotes[index].length; i++) {
+                notes.innerHTML += `<li>${modalMessageNotes[index][i]}</li>`
             }
         })
+    })
+
+    img.addEventListener('click', e => {
+        modalAvatar.style.display = 'block'
+        
+        const name = document.getElementById('name')
+        const img = document.getElementById('img')
+        const level = document.getElementById('level')
+        const left = document.getElementById('left-arrow')
+        const right = document.getElementById('right-arrow')
+        const lev = data.stats.level + data.bonus
+        
+        displayLevel()
+        
+        name.textContent = data.name
+        img.src = data.avatar
+        img.src = `./Levels/Lvl${lev}.jpg`
+        level.textContent = `Nivel ${lev}`
+
+        left.addEventListener('click', e => {
+            if (data.stats.levelsPassed + data.bonus > 1) {
+                data.stats.level -= 1
+                displayLevel()
+            } 
+        })
+        
+        right.addEventListener('click', e => {
+            if (data.stats.level < data.stats.levelsPassed + data.bonus) {
+                data.stats.level += 1
+                displayLevel()
+            } 
+        })
+    
+        function displayLevel() {
+            const level = data.stats.level + data.bonus
+            img.src = `./Levels/Lvl${level}.jpg`
+            if (data.stats.level + data.bonus <= 1) {
+                left.style.visibility = 'hidden'
+            }  else left.style.visibility = 'visible'
+            if (data.stats.level >= data.stats.levelsPassed - data.bonus) {
+                right.style.visibility = 'hidden'
+            }  else right.style.visibility = 'visible'
+            levelDOM.innerText = `Nivel ${data.stats.levelsPassed}`
+        }
+    })
+
+    modalAvatar.addEventListener('click', e => {
+        if (e.target.classList.value === 'img-container' || e.target.classList.value === 'avatar-content') {
+            modalAvatar.style.display = 'none'
+        }
     })
 }

@@ -15,8 +15,8 @@ body {
     user-select: none;
 }
 
-.modal-container {
-    display: none;
+.modal-message,
+.modal-avatar {
     position: fixed;
     top: 0;
     left: 0;
@@ -30,7 +30,22 @@ body {
     z-index: 100;
 }
 
-.modal-content {
+.modal-message {
+    display: none;
+}
+
+.modal-avatar {
+    display: none;
+}
+
+.modal-avatar .img-container img {
+    border-radius: 50%;
+    margin: 0.5rem 1rem;
+    width: 40vw;
+    box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+}
+
+.message-content {
     position: relative;
     background-color: #1A74E2;
     color: aliceblue;
@@ -42,17 +57,17 @@ body {
     border-radius: 5px;
 }
 
-.modal-content h1 {
+.message-content h1 {
     color: #082e4d;
     font-size: 1.3rem;
 }
 
-.modal-content ul {
+.message-content ul {
     margin-left: 2rem;
     margin-top: 1rem;
 }
 
-.modal-content i {
+.message-content i {
     color: aliceblue;
     float: right;
     font-size: 14px;
@@ -60,7 +75,7 @@ body {
     cursor: pointer;
 }
 
-.modal-content i:hover {
+.message-content i:hover {
     color: #c1e0fa;
 }
 
@@ -119,7 +134,8 @@ body {
     border-bottom-right-radius: 5px;
 }
 
-.avatar {
+.avatar,
+.avatar-content {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -130,12 +146,18 @@ body {
     height: 100%;
 } 
 
-.avatar h1 {
+.avatar h1,
+.avatar-content h1 {
     color: #44a8fa;
+    width: fit-content;
+    margin: 0 auto;
 }
 
-.avatar h3 {
+.avatar h3,
+.avatar-content h3 {
     color: rgb(207, 155, 24);
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .img-container {
@@ -149,6 +171,10 @@ body {
     margin: 0.5rem 1rem;
     width: 150px;
     box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+}
+
+.img-container img:hover {
+    cursor: pointer;
 }
 
 .img-container i {
