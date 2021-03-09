@@ -30,14 +30,6 @@ body {
     z-index: 100;
 }
 
-.modal-message {
-    display: none;
-}
-
-.modal-avatar {
-    display: none;
-}
-
 .modal-avatar .img-container img {
     border-radius: 50%;
     margin: 0.5rem 1rem;
@@ -164,6 +156,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.avatar-content .img-container img:hover {
+    cursor: default;
 }
 
 .img-container img {
