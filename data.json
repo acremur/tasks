@@ -46,15 +46,15 @@
                 ]
             },
             {
-                "block": "Febrero / marzo 2020",
+                "block": "Febrero / marzo 2021",
                 "show": true,
                 "values": ["Entregado", "Objetivo", "Ejecución", "Avanzado"],
                 "maxGrades": [4, 3, 2, 1],
                 "tasks": [
                     {
                         "title": "Melodía de oído",
-                        "notes": ["No se ha entregado la tarea"],
-                        "taskGrades": [0, 0, 0, 0],
+                        "notes": ["Al final te sacaste la cancioncilla de oído, fuera de plazo, sí, pero la sacaste, también. Bien hecho."],
+                        "taskGrades": [0, 3, 2, 1],
                         "done": true,
                         "handed": false
                     },
@@ -67,14 +67,50 @@
                     },
                     {
                         "title": "My Brass Band repaso",
-                        "notes": ["No se ha entregado la tarea"],
-                        "taskGrades": [0, 0, 0, 0],
+                        "notes": ["A pesar de que no has practicado fuera de clase, te sale bastante bien, la verdad."],
+                        "taskGrades": [0, 3, 2, 1],
+                        "done": true,
+                        "handed": false
+                    },
+                    {
+                        "title": "Train Ride completo",
+                        "notes": ["Muy bien esta Felipe, hay que practicar un poco más el tercer pentagrama para que no haya parones, pero aún así se valora que lo lees y lo tocas así que genial."],
+                        "taskGrades": [4, 3, 2, 1],
+                        "done": true,
+                        "handed": true
+                    }
+                ]
+            },
+            {
+                "block": "Marzo / abril 2021",
+                "show": true,
+                "values": ["Entregado", "Objetivo", "Ejecución", "Avanzado"],
+                "maxGrades": [4, 3, 2, 1],
+                "tasks": [
+                    {
+                        "title": "Jelly Wobble",
+                        "notes": ["Se ha mejorado aunque falta fluidez. Practicar entre semana un ratito, no sólo en clase."],
+                        "taskGrades": [0, 3, 2, 0],
                         "done": true,
                         "handed": false
                     },
                     {
                         "title": "Por determinar",
-                        "notes": ["Esta tarea está programada para el 09/03/21"],
+                        "notes": ["Esta tarea está programada para el martes 06/04/21"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    },
+                    {
+                        "title": "Por determinar",
+                        "notes": ["Por determinar"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    },
+                    {
+                        "title": "Por determinar",
+                        "notes": ["Por determinar"],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
@@ -84,7 +120,7 @@
         ],
         "bonus": 0,
         "status": {
-            "message": "noHandedTask",
+            "message": "goalMet",
             "kind": true
         },
         "aim": 25,
@@ -166,7 +202,7 @@
                     {
                         "title": "Salut d'amour manos separadas",
                         "notes": [
-                            "Avanzado: hay que mejorar la fluidez, pero salvo el final que no lo llegamos a ver, lo demás está bien"
+                            "Avanzado: hay que mejorar la fluidez, pero salvo el final que no lo llegamos a ver, lo demás está bien."
                         ],
                         "taskGrades": [4, 3, 2, 0],
                         "done": true,
@@ -182,8 +218,48 @@
                         "handed": true
                     },
                     {
+                        "title": "Salut D'amour completo",
+                        "notes": [
+                            "Objetivo: cumplido, tocar la pieza con las dos manos.",
+                            "Ejecución: hay varias imprecisiones y notas que no coinciden con la partitura.",
+                            "Avanzado: falta fluidez, hay que practicar."
+                        ],
+                        "taskGrades": [4, 3, 0, 0],
+                        "done": true,
+                        "handed": true
+                    }
+                ]
+            },
+            {
+                "block": "Marzo / abril 2021",
+                "show": true,
+                "values": ["Entregado", "Objetivo", "Ejecución", "Avanzado"],
+                "maxGrades": [4, 3, 2, 1],
+                "tasks": [
+                    {
+                        "title": "Innocense a 70 bpm",
+                        "notes": ["No se ha entregado la tarea"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": true,
+                        "handed": false
+                    },
+                    {
                         "title": "Por determinar",
-                        "notes": ["Esta tarea está programada para el 09/03/21"],
+                        "notes": ["Esta tarea está programada para el martes 06/04/21"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    },
+                    {
+                        "title": "Por determinar",
+                        "notes": ["Por determinar"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    },
+                    {
+                        "title": "Por determinar",
+                        "notes": ["Por determinar"],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
@@ -193,12 +269,13 @@
         ],
         "bonus": 1,
         "status": {
-            "message": "levelUp",
+            "message": "barelyGoal",
             "kind": true
         },
         "aim": 25,
         "messages": {
             "goalMet": "Has alcanzado el objetivo! Sigue así, ha superarse el próximo mes!",
+            "barelyGoal": "Alcanzaste el objetivo en el último bloque, aunque por los pelos.",
             "goalMetBonus": "Has alcanzado el objetivo! Además, subes nivel al conseguir la máxima puntuación.",
             "failGoal": "No has alcanzado el objetivo. Bajas al último nivel de color blanco.",
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
