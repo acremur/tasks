@@ -123,7 +123,7 @@
         ],
         "bonus": 0,
         "status": {
-            "message": "goalMet",
+            "message": "noHandedTask",
             "kind": true
         },
         "aim": 25,
@@ -277,7 +277,7 @@
         ],
         "bonus": 1,
         "status": {
-            "message": "barelyGoal",
+            "message": "handedTask",
             "kind": true
         },
         "aim": 25,
