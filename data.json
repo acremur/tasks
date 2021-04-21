@@ -96,21 +96,24 @@
                     },
                     {
                         "title": "Himno del Sevilla",
-                        "notes": ["Esta tarea debe entregarse antes del martes 13/04/21 a las 18:00 pm"],
+                        "notes": [
+                            "Ejecución: falta sincronizar la melodía con la mano izquierda.",
+                            "Avanzado: buen trabajo sacando parte de la estrofa."
+                        ],
+                        "taskGrades": [0, 3, 1, 1],
+                        "done": true,
+                        "handed": false
+                    },
+                    {
+                        "title": "Al atardecer",
+                        "notes": ["Esta tarea debe entregarse antes del jueves 22/04/21 a las 18:20 pm"],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
                     },
                     {
-                        "title": "Por determinar",
-                        "notes": ["Esta tarea está programada para el martes 20/04/21"],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
-                        "handed": false
-                    },
-                    {
-                        "title": "Por determinar",
-                        "notes": ["Por determinar"],
+                        "title": "Canción de oído",
+                        "notes": ["Esta tarea debe entregarse antes del martes 27/04/21 a las 18:00 pm"],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
@@ -245,21 +248,24 @@
                     },
                     {
                         "title": "Salut D'amour fluido",
-                        "notes": ["Esta tarea debe entregarse antes del martes 13/04/21 a las 18:00 pm"],
+                        "notes": ["No se ha entregado la tarea"],
                         "taskGrades": [0, 0, 0, 0],
-                        "done": false,
+                        "done": true,
                         "handed": false
                     },
                     {
-                        "title": "Por determinar",
-                        "notes": ["Esta tarea está programada para el martes 20/04/21"],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
-                        "handed": false
+                        "title": "Scary Stuff Primera Parte",
+                        "notes": [
+                            "Ejecución: practicar para que suene fluido.",
+                            "Avanzado: atender a la dinámica de la pieza."
+                        ],
+                        "taskGrades": [4, 3, 1, 0],
+                        "done": true,
+                        "handed": true
                     },
                     {
-                        "title": "Por determinar",
-                        "notes": ["Por determinar"],
+                        "title": "Por Salut D'amour fluido - Manos separadas",
+                        "notes": ["Esta tarea debe entregarse antes del martes 27/04/21 a las 18:00 pm"],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
