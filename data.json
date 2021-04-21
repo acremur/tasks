@@ -241,8 +241,10 @@
                 "tasks": [
                     {
                         "title": "Innocense a 70 bpm",
-                        "notes": ["No se ha entregado la tarea"],
-                        "taskGrades": [0, 0, 0, 0],
+                        "notes": [
+                            "Ejecución: atender a la dinámica de la pieza.",
+                            "Avanzado: tocar a 80 bpm o más."],
+                        "taskGrades": [0, 3, 2, 0],
                         "done": true,
                         "handed": false
                     },
