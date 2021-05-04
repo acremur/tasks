@@ -288,7 +288,7 @@
             "goalMet": "Has alcanzado el objetivo! Sigue así, ha superarse el próximo mes!",
             "barelyGoal": "Alcanzaste el objetivo en el último bloque, aunque por los pelos.",
             "goalMetBonus": "Has alcanzado el objetivo! Además, subes nivel al conseguir la máxima puntuación.",
-            "failGoal": "No has alcanzado el objetivo. Bajas al último nivel de color blanco.",
+            "failGoal": "No has alcanzado el objetivo. Tienes que entregar las tareas para mejorar de nivel.",
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
             "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
             "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás."  
