@@ -267,9 +267,12 @@
                     },
                     {
                         "title": "Por Salut D'amour fluido - Manos separadas",
-                        "notes": ["Esta tarea debe entregarse antes del jueves 29/04/21 a las 18:20 pm"],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
+                        "notes": [
+                            "Ejecución: aún hay que mejorar la fluidez.",
+                            "Avanzado: cuidado con los cambios de dinámica."
+                        ],
+                        "taskGrades": [0, 3, 2, 1],
+                        "done": true,
                         "handed": false
                     }
                 ]
