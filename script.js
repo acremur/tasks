@@ -167,7 +167,7 @@ function calculateLevel(data, levelDOM) {
 function setMessage(pupil, data) {
     const message = document.createElement('h1')
     message.classList.add('message')
-    message.classList.add(`${data.status.kind ? 'kind' : 'unkind'}`)
+    message.classList.add(`${data.status.failGoal ? 'fail-goal-message' : 'met-goal-message'}`)
     message.innerText = data.messages[data.status.message]
 
     pupil.appendChild(message)

@@ -118,13 +118,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #1A74E2, #44a8fa);
     color: #101010;
     grid-column: 1/-1;
     padding: 0.5rem; 
     font-size: 1.2rem;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.met-goal-message {
+    background: linear-gradient(to bottom, #1A74E2, #44a8fa);
+}
+
+.fail-goal-message {
+    color: coral;
 }
 
 .avatar,

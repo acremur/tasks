@@ -106,16 +106,16 @@
                     },
                     {
                         "title": "Al atardecer",
-                        "notes": ["Esta tarea debe entregarse antes del jueves 22/04/21 a las 18:20 pm"],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
-                        "handed": false
+                        "notes": ["Ha faltado darle un par de vueltas para no olvidar la melodía y los acordes, pero está bien. Bien hecho."],
+                        "taskGrades": [4, 3, 1, 1],
+                        "done": true,
+                        "handed": true
                     },
                     {
                         "title": "Canción de oído",
-                        "notes": ["Esta tarea debe entregarse antes del jueve 29/04/21 a las 18:20 pm"],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
+                        "notes": ["En realidad ha sido una transposición del himno del Sevilla, pero tiene mérito igualmente. Queda pendiente sacar una melodía de cero del oído al piano, sin transponer."],
+                        "taskGrades": [0, 3, 2, 1],
+                        "done": true,
                         "handed": false
                     }
                 ]
@@ -123,8 +123,8 @@
         ],
         "bonus": 0,
         "status": {
-            "message": "failGoal",
-            "kind": true
+            "message": "personalMsg",
+            "failGoal": false
         },
         "aim": 25,
         "messages": {
@@ -133,7 +133,8 @@
             "failGoal": "No has alcanzado el objetivo. Tienes que entregar las tareas para mejorar de nivel",
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
             "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
-            "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás."  
+            "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás.",
+            "personalMsg": "Has alcanzado el objetivo del bloque, por los pelos, pero cumplido."
         }
     },
     {
@@ -280,8 +281,8 @@
         ],
         "bonus": 1,
         "status": {
-            "message": "failGoal",
-            "kind": true
+            "message": "personalMsg",
+            "failGoal": true
         },
         "aim": 25,
         "messages": {
@@ -291,7 +292,8 @@
             "failGoal": "No has alcanzado el objetivo. Tienes que entregar las tareas para mejorar de nivel.",
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
             "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
-            "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás."  
+            "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás.",
+            "personalMsg": "Este bloque no hemos llegado, a pesar de que lo hiciste muy bien con la de Scary Stuff, pero sólo se entregó esa tarea a tiempo y la segunda no se entregó. Ánimo para fin de curso." 
         }
     }
 ]
