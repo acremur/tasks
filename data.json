@@ -119,6 +119,45 @@
                         "handed": false
                     }
                 ]
+            },
+            {
+                "block": "Mayo / junio 2021",
+                "show": true,
+                "values": ["Entregado", "Objetivo", "Ejecución", "Avanzado"],
+                "maxGrades": [4, 3, 2, 1],
+                "tasks": [
+                    {
+                        "title": "Summer Fair manos separadas",
+                        "notes": [
+                            "Objetivo: la he dado como estudiada porque si se recordaba la mano derecha, pero la izquierda estaba muy flojita.",
+                            "Avanzado: hay que mejorar fluidez y métrica de las notas."
+                        ],
+                        "taskGrades": [4, 1, 0, 0],
+                        "done": true,
+                        "handed": true
+                    },
+                    {
+                        "title": "La canción del atardecer manos separadas",
+                        "notes": ["Tarea programada para el jueves 20 de mayo a las 6:20 pm"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    },
+                    {
+                        "title": "Sin determinar",
+                        "notes": ["Sin determinar"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    },
+                    {
+                        "title": "Sin determinar",
+                        "notes": ["Sin determinar"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    }
+                ]
             }
         ],
         "bonus": 0,
@@ -134,7 +173,7 @@
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
             "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
             "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás.",
-            "personalMsg": "Has alcanzado el objetivo del bloque, por los pelos, pero cumplido."
+            "personalMsg": "Necesito que le dediques tiempo y te esfuerces un poco más en leer, tienes que estar más centrado en clase."
         }
     },
     {
@@ -277,11 +316,50 @@
                         "handed": false
                     }
                 ]
+            },
+            {
+                "block": "Mayo / junio 2021",
+                "show": true,
+                "values": ["Entregado", "Objetivo", "Ejecución", "Avanzado"],
+                "maxGrades": [4, 3, 2, 1],
+                "tasks": [
+                    {
+                        "title": "Innocense a 90 bpm",
+                        "notes": [
+                            "Ejecución: atender a los cambios de dinámica.",
+                            "Avanzado: mejorar la fluidez de la pieza."
+                        ],
+                        "taskGrades": [4, 3, 1, 0],
+                        "done": true,
+                        "handed": true
+                    },
+                    {
+                        "title": "Salut D'amour",
+                        "notes": ["Tarea programada para el jueves 20 de mayo a las 6:20 pm"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    },
+                    {
+                        "title": "Sin determinar",
+                        "notes": ["Sin determinar"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    },
+                    {
+                        "title": "Sin determinar",
+                        "notes": ["Sin determinar"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    }
+                ]
             }
         ],
         "bonus": 1,
         "status": {
-            "message": "personalMsg",
+            "message": "handedTask",
             "failGoal": true
         },
         "aim": 25,
