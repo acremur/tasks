@@ -360,7 +360,7 @@
         "bonus": 1,
         "status": {
             "message": "handedTask",
-            "failGoal": true
+            "failGoal": false
         },
         "aim": 25,
         "messages": {
