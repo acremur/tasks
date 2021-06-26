@@ -162,7 +162,7 @@
         ],
         "bonus": 0,
         "status": {
-            "message": "handedTask",
+            "message": "personalMsg",
             "failGoal": false
         },
         "aim": 25,
@@ -363,7 +363,7 @@
         ],
         "bonus": 1,
         "status": {
-            "message": "handedTask",
+            "message": "personalMsg",
             "failGoal": false
         },
         "aim": 25,
