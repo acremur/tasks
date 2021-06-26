@@ -138,21 +138,21 @@
                     },
                     {
                         "title": "La canción del atardecer manos separadas",
-                        "notes": ["Tarea programada para el jueves 20 de mayo a las 6:20 pm"],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
-                        "handed": false
+                        "notes": ["Avanzado: Todo bien salvo el bemol de la armadura en la mano izquierda"],
+                        "taskGrades": [4, 3, 1, 1],
+                        "done": true,
+                        "handed": true
                     },
                     {
-                        "title": "Sin determinar",
-                        "notes": ["Sin determinar"],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
-                        "handed": false
+                        "title": "Canción del atardecer",
+                        "notes": ["Avanzado: Está bien, el final un poco trastabillado pero lo demás muy bien. Cuenta la duración de las notas en la melodía y cuidado con la armadura que lleva un bemol."],
+                        "taskGrades": [4, 2, 1, 0],
+                        "done": true,
+                        "handed": true
                     },
                     {
-                        "title": "Sin determinar",
-                        "notes": ["Sin determinar"],
+                        "title": "Durante la noche",
+                        "notes": ["La tarea debe entregarse antes del martes 29 de junio"],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
@@ -162,7 +162,7 @@
         ],
         "bonus": 0,
         "status": {
-            "message": "personalMsg",
+            "message": "handedTask",
             "failGoal": false
         },
         "aim": 25,
@@ -335,20 +335,24 @@
                     },
                     {
                         "title": "Salut D'amour",
-                        "notes": ["Tarea programada para el jueves 20 de mayo a las 6:20 pm"],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
-                        "handed": false
+                        "notes": [
+                            "Objetivo: se va mejorando, la mano izquierda todavía mas suave para dar protagonismo a la melodía de la mano derecha",
+                            "Ejecución: cuidado con algunas notas, no están bien, revisa la partitura. Presta atención a los cambios de dinámica",
+                            "Avanzado: hay que mejorar la fluidez"
+                        ],
+                        "taskGrades": [4, 3, 1, 0],
+                        "done": true,
+                        "handed": true
                     },
                     {
-                        "title": "Sin determinar",
+                        "title": "Innocense a 100 bpm",
                         "notes": ["Sin determinar"],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
                     },
                     {
-                        "title": "Sin determinar",
+                        "title": "Preludio 1",
                         "notes": ["Sin determinar"],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
