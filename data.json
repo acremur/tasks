@@ -173,7 +173,7 @@
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
             "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
             "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás.",
-            "personalMsg": "Necesito que le dediques tiempo y te esfuerces un poco más en leer, tienes que estar más centrado en clase."
+            "personalMsg": "Te faltan 4 puntos para alcanzar el objetivo de bloque!"
         }
     },
     {
@@ -375,7 +375,7 @@
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
             "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
             "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás.",
-            "personalMsg": "Este bloque no hemos llegado, a pesar de que lo hiciste muy bien con la de Scary Stuff, pero sólo se entregó esa tarea a tiempo y la segunda no se entregó. Ánimo para fin de curso." 
+            "personalMsg": "9 puntos para alcanzar el objetivo. Tienes dos tareas pendientes." 
         }
     }
 ]
