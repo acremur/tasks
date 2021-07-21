@@ -353,9 +353,9 @@
                     },
                     {
                         "title": "Preludio 1",
-                        "notes": ["La tarea debe entregarse antes del martes 29 de junio."],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
+                        "notes": ["Como siempre practicar para que suene sin interrupciones de un tirón, pero muy bien"],
+                        "taskGrades": [0, 3, 2, 1],
+                        "done": true,
                         "handed": false
                     }
                 ]
