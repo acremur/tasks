@@ -154,6 +154,48 @@
                         "title": "Durante la noche",
                         "notes": ["La tarea debe entregarse antes del martes 29 de junio."],
                         "taskGrades": [0, 0, 0, 0],
+                        "done": true,
+                        "handed": false
+                    }
+                ]
+            },
+            {
+                "block": "Noviembre / diciembre 2021",
+                "show": true,
+                "values": ["Entregado", "Objetivo", "Ejecución", "Avanzado"],
+                "maxGrades": [4, 3, 2, 1],
+                "tasks": [
+                    {
+                        "title": "Halloween Song - Tarea Conjunta",
+                        "notes": [
+                            "falta que suene fluido y sin errores.",
+                            "la dinámica, se toca piano.",
+                            "La melodía se toca con las dos manos no sólo la derecha.",
+                            "la letra forma parte de la canción y va cantada.",
+                            "Os podríais a ver currado el final un poco más, en lugar de cortar a la mitad, terminar con la primera nota de la siguiente vuelta por ejemplo."
+                        ],
+                        "taskGrades": [4, 2, 0, 0],
+                        "done": true,
+                        "handed": true
+                    },
+                    {
+                        "title": "Minuet and Trio - Primera Parte",
+                        "notes": ["Entregar antes del lunes 22 de noviembre a las 18:00h"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    },
+                    {
+                        "title": "Aún por definir",
+                        "notes": ["Sin comentarios"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    },
+                    {
+                        "title": "Aún por definir",
+                        "notes": ["Sin comentarios"],
+                        "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
                     }
@@ -173,7 +215,7 @@
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
             "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
             "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás.",
-            "personalMsg": "Te faltan 4 puntos para alcanzar el objetivo de bloque!"
+            "personalMsg": "Ha ponerse las pilas!"
         }
     },
     {
@@ -348,7 +390,7 @@
                         "title": "Innocense a 100 bpm",
                         "notes": ["Esta tarea tenía que estar entregada ya, la verdad."],
                         "taskGrades": [0, 0, 0, 0],
-                        "done": false,
+                        "done": true,
                         "handed": false
                     },
                     {
@@ -356,6 +398,48 @@
                         "notes": ["Como siempre practicar para que suene sin interrupciones de un tirón, pero muy bien"],
                         "taskGrades": [0, 3, 2, 1],
                         "done": true,
+                        "handed": false
+                    }
+                ]
+            },
+            {
+                "block": "Noviembre / diciembre 2021",
+                "show": true,
+                "values": ["Entregado", "Objetivo", "Ejecución", "Avanzado"],
+                "maxGrades": [4, 3, 2, 1],
+                "tasks": [
+                    {
+                        "title": "Halloween Song - Tarea Conjunta",
+                        "notes": [
+                            "falta que suene fluido y sin errores.",
+                            "la dinámica, se toca piano.",
+                            "La melodía se toca con las dos manos no sólo la derecha.",
+                            "la letra forma parte de la canción y va cantada.",
+                            "Os podríais a ver currado el final un poco más, en lugar de cortar a la mitad, terminar con la primera nota de la siguiente vuelta por ejemplo."
+                        ],
+                        "taskGrades": [4, 2, 0, 0],
+                        "done": true,
+                        "handed": true
+                    },
+                    {
+                        "title": "Pensando en ti",
+                        "notes": ["Entregar antes del lunes 22 de noviembre a las 18:00h"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    },
+                    {
+                        "title": "Aún por definir",
+                        "notes": ["Sin comentarios"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
+                        "handed": false
+                    },
+                    {
+                        "title": "Aún por definir",
+                        "notes": ["Sin comentarios"],
+                        "taskGrades": [0, 0, 0, 0],
+                        "done": false,
                         "handed": false
                     }
                 ]
@@ -375,7 +459,7 @@
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
             "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
             "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás.",
-            "personalMsg": "9 puntos para alcanzar el objetivo. Tienes dos tareas pendientes!" 
+            "personalMsg": "Ha ponerse las pilas!" 
         }
     }
 ]

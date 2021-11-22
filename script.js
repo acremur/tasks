@@ -41,7 +41,7 @@ function displayPupil(data) {
         const sumTasksGrades = sumTaskGrades.reduce((total, grade) => total += grade, 0)
 
         block.innerHTML = `
-            <div class="month-info">
+            <div class="month-info ${sumTasksGrades >= 25 ? 'month-info-pass' : 'month-info-fail'}">
                 <i class="fas fa-clipboard-list"></i>
                 <h4>${taskBlock.block}</h4>
                 <h3 class="total-points">${data.stats.points += sumTasksGrades} puntos</h3>

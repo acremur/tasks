@@ -209,9 +209,9 @@ body {
 }
 
 .month-info {
-    background: aliceblue; 
+    /* background: aliceblue; 
     background: -webkit-linear-gradient(to bottom, #1A74E2, #3FA0EF);  
-    background: linear-gradient(to bottom, #1A74E2, #3FA0EF);
+    background: linear-gradient(to bottom, #1A74E2, #3FA0EF); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -221,6 +221,18 @@ body {
     border-top-right-radius: 5px;
     text-transform: uppercase;
     height: 6.95vh;
+}
+
+.month-info-pass {
+    background: aliceblue; 
+    background: -webkit-linear-gradient(to bottom, #1A74E2, #3FA0EF);  
+    background: linear-gradient(to bottom, #1A74E2, #3FA0EF);
+}
+
+.month-info-fail {
+    background: aliceblue; 
+    background: -webkit-linear-gradient(to bottom, #7aa6db, #b9d4eb);  
+    background: linear-gradient(to bottom, #7aa6db, #b9d4eb);
 }
 
 .month-info * {
