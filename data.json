@@ -189,8 +189,8 @@
                         "title": "Minuet en F (1ª mitad y manos separadas)",
                         "notes": ["Valoro el esfuerzo durante la clase, donde sí se tocó las dos manos separadas he incluso un poco juntas, aunque hace falta dedicarle un poco más."],
                         "taskGrades": [4, 2, 1, 0],
-                        "done": false,
-                        "handed": false
+                        "done": true,
+                        "handed": true
                     },
                     {
                         "title": "Jingle Bells Boggie",
@@ -439,8 +439,8 @@
                             "Hay que mejorar la fuidez, la dinámica y tocar la pieza hasta el final, que falta la última hoja"
                         ],
                         "taskGrades": [4, 3, 0, 0],
-                        "done": false,
-                        "handed": false
+                        "done": true,
+                        "handed": true
                     },
                     {
                         "title": "Jingle Bells Boggie",
