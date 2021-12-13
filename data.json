@@ -179,22 +179,22 @@
                         "handed": true
                     },
                     {
-                        "title": "Minuet and Trio - Primera Parte",
-                        "notes": ["Entregar antes del lunes 22 de noviembre a las 18:00h"],
-                        "taskGrades": [0, 0, 0, 0],
+                        "title": "Pensando en ti",
+                        "notes": ["Buen esfuerzo durante la clase pero hay que dedicarle más tiempo durante la semana"],
+                        "taskGrades": [0, 3, 2, 0],
+                        "done": true,
+                        "handed": false
+                    },
+                    {
+                        "title": "Minuet en F (1ª mitad y manos separadas)",
+                        "notes": ["Valoro el esfuerzo durante la clase, donde sí se tocó las dos manos separadas he incluso un poco juntas, aunque hace falta dedicarle un poco más."],
+                        "taskGrades": [4, 2, 1, 0],
                         "done": false,
                         "handed": false
                     },
                     {
-                        "title": "Aún por definir",
-                        "notes": ["Sin comentarios"],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
-                        "handed": false
-                    },
-                    {
-                        "title": "Aún por definir",
-                        "notes": ["Sin comentarios"],
+                        "title": "Jingle Bells Boggie",
+                        "notes": ["Entregar antes de que acabe el año"],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
@@ -215,7 +215,7 @@
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
             "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
             "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás.",
-            "personalMsg": "Ha ponerse las pilas!"
+            "personalMsg": "Completad las tareas para alcanzar el objetivo de los 25 puntos antes de que abace el año!"
         }
     },
     {
@@ -422,22 +422,29 @@
                         "handed": true
                     },
                     {
-                        "title": "Pensando en ti",
-                        "notes": ["Entregar antes del lunes 22 de noviembre a las 18:00h"],
-                        "taskGrades": [0, 0, 0, 0],
+                        "title": "Minuet and Trio - Primera Parte",
+                        "notes": [
+                            "Estaba tocada despacito, un poco trabado, pero correcto, dando tocando las notas bien",
+                            "Haría falta mirar las manos por separado, asimilando bien la dijitación de cada mano para tocarlo más fluido",
+                            "Se daba un punto por la dinámica, hay que prestas atención a eso"
+                        ],
+                        "taskGrades": [0, 3, 2, 0],
+                        "done": true,
+                        "handed": false
+                    },
+                    {
+                        "title": "Prelude Cm (dos primeras hojas)",
+                        "notes": [
+                            "Se nota que se ha estudiado y aunque despacio estaba bien tocado",
+                            "Hay que mejorar la fuidez, la dinámica y tocar la pieza hasta el final, que falta la última hoja"
+                        ],
+                        "taskGrades": [4, 3, 0, 0],
                         "done": false,
                         "handed": false
                     },
                     {
-                        "title": "Aún por definir",
-                        "notes": ["Sin comentarios"],
-                        "taskGrades": [0, 0, 0, 0],
-                        "done": false,
-                        "handed": false
-                    },
-                    {
-                        "title": "Aún por definir",
-                        "notes": ["Sin comentarios"],
+                        "title": "Jingle Bells Boggie",
+                        "notes": ["Entregar antes de que acabe el año"],
                         "taskGrades": [0, 0, 0, 0],
                         "done": false,
                         "handed": false
@@ -459,7 +466,7 @@
             "levelUp": "Has subido de nivel! tu anillo ha mejorado.",
             "handedTask": "Has mejorado tu avatar al entregar la tarea. Bien hecho!",
             "noHandedTask": "No has entregado la tarea. Como no practiques más te vas a quedar atrás.",
-            "personalMsg": "Ha ponerse las pilas!" 
+            "personalMsg": "Completad las tareas para alcanzar el objetivo de los 25 puntos antes de que abace el año!" 
         }
     }
 ]
